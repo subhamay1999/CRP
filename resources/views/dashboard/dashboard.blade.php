@@ -3,73 +3,49 @@
 <link rel="stylesheet" href="css/dashboard.css">
 <div class="sidebar">
     <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
+    <img src="assets/logo.jpg">
       <span class="logo_name">CRP</span>
     </div>
       <ul class="nav-links">
         <li>
           <a href="#" class="active">
-            <i class='bx bx-grid-alt' ></i>
+          <i class="fas fa-home"></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class='bx bx-box' ></i>
-            <span class="links_name">Product</span>
+          <i class="fas fa-taxi"></i>
+            <span class="links_name">Car list</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Order list</span>
+          <i class="fas fa-shopping-cart"></i>
+            <span class="links_name">Booking list</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Analytics</span>
+          <i class="fas fa-address-card"></i>
+            <span class="links_name">Address</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Stock</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-book-alt' ></i>
-            <span class="links_name">Total order</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Team</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-message' ></i>
-            <span class="links_name">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-heart' ></i>
-            <span class="links_name">Favrorites</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
+          <i class="fas fa-cog"></i>
             <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <i class="fas fa-id-badge"></i>
+            <span class="links_name">Contact Us</span>
           </a>
         </li>
         <li class="log_out">
           <a href="#">
-            <i class='bx bx-log-out'></i>
+          <i class="fas fa-sign-out-alt"></i>
             <span class="links_name">Log out</span>
           </a>
         </li>
@@ -78,17 +54,17 @@
   <section class="home-section">
     <nav>
       <div class="sidebar-button">
-        <i class='bx bx-menu sidebarBtn'></i>
+      <i class="fas fa-home bx-menu sidebarBtn"></i>
         <span class="dashboard">Dashboard</span>
       </div>
       <div class="search-box">
         <input type="text" placeholder="Search...">
-        <i class='bx bx-search' ></i>
+        <i class="fas fa-search"></i>
       </div>
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
+        <i class="fas fa-user-circle"></i>
         <span class="admin_name">Subhamay Paria</span>
-        <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
 
@@ -96,53 +72,49 @@
       <div class="overview-boxes">
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Order</div>
-            <div class="number">40,876</div>
+            <div class="box-topic">Total Booking</div>
+            <div class="number">50</div>
             <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
             </div>
           </div>
-          <i class='bx bx-cart-alt cart'></i>
+          <i class="fas fa-taxi"></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Sales</div>
+            <div class="box-topic">Total KM Travel</div>
             <div class="number">38,876</div>
             <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
             </div>
           </div>
-          <i class='bx bxs-cart-add cart two' ></i>
+          <i class="fas fa-taxi two"></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Profit</div>
-            <div class="number">$12,876</div>
+            <div class="box-topic">Upcoming Travel</div>
+            <div class="number">2</div>
             <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
             </div>
           </div>
-          <i class='bx bx-cart cart three' ></i>
+          <i class="fas fa-taxi three"></i>
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Return</div>
-            <div class="number">11,086</div>
+            <div class="box-topic">Total Travel</div>
+            <div class="number">10</div>
             <div class="indicator">
-              <i class='bx bx-down-arrow-alt down'></i>
-              <span class="text">Down From Today</span>
+              <span class="text">Up from yesterday</span>
             </div>
           </div>
-          <i class='bx bxs-cart-download cart four' ></i>
+          <i class="fas fa-taxi four"></i>
         </div>
       </div>
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Recent Sales</div>
+          <div class="title">Recent Travel</div>
           <div class="sales-details">
             <ul class="details">
               <li class="topic">Date</li>
@@ -151,44 +123,30 @@
               <li><a href="#">02 Jan 2021</a></li>
               <li><a href="#">02 Jan 2021</a></li>
               <li><a href="#">02 Jan 2021</a></li>
-              <li><a href="#">02 Jan 2021</a></li>
-              <li><a href="#">02 Jan 2021</a></li>
             </ul>
             <ul class="details">
             <li class="topic">Customer</li>
-            <li><a href="#">Alex Doe</a></li>
-            <li><a href="#">David Mart</a></li>
-            <li><a href="#">Roe Parter</a></li>
-            <li><a href="#">Diana Penty</a></li>
-            <li><a href="#">Martin Paw</a></li>
-            <li><a href="#">Doe Alex</a></li>
-            <li><a href="#">Aiana Lexa</a></li>
-            <li><a href="#">Rexel Mags</a></li>
-             <li><a href="#">Tiana Loths</a></li>
+            <li><a href="#">Subhamay paria</a></li>
+            <li><a href="#">Subhamay paria</a></li>
+            <li><a href="#">Subhamay paria</a></li>
+            <li><a href="#">Subhamay paria</a></li>
+            <li><a href="#">Subhamay paria</a></li>
           </ul>
           <ul class="details">
-            <li class="topic">Sales</li>
-            <li><a href="#">Delivered</a></li>
-            <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-            <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-             <li><a href="#">Pending</a></li>
-            <li><a href="#">Delivered</a></li>
+            <li class="topic">Destination</li>
+            <li><a href="#">Kolkata</a></li>
+            <li><a href="#">Kolkata</a></li>
+            <li><a href="#">Kolkata</a></li>
+            <li><a href="#">Kolkata</a></li>
+            <li><a href="#">Kolkata</a></li>
           </ul>
           <ul class="details">
-            <li class="topic">Total</li>
-            <li><a href="#">$204.98</a></li>
-            <li><a href="#">$24.55</a></li>
-            <li><a href="#">$25.88</a></li>
-            <li><a href="#">$170.66</a></li>
-            <li><a href="#">$56.56</a></li>
-            <li><a href="#">$44.95</a></li>
-            <li><a href="#">$67.33</a></li>
-             <li><a href="#">$23.53</a></li>
-             <li><a href="#">$46.52</a></li>
+            <li class="topic">KM</li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">100</a></li>
           </ul>
           </div>
           <div class="button">
@@ -196,64 +154,44 @@
           </div>
         </div>
         <div class="top-sales box">
-          <div class="title">Top Seling Product</div>
+          <div class="title">Top Travel Distance</div>
           <ul class="top-sales-details">
             <li>
-            <a href="#">
-              <!--<img src="images/sunglasses.jpg" alt="">-->
-              <span class="product">Vuitton Sunglasses</span>
-            </a>
-            <span class="price">$1107</span>
-          </li>
-          <li>
-            <a href="#">
-               <!--<img src="images/jeans.jpg" alt="">-->
-              <span class="product">Hourglass Jeans </span>
-            </a>
-            <span class="price">$1567</span>
-          </li>
-          <li>
-            <a href="#">
-             <!-- <img src="images/nike.jpg" alt="">-->
-              <span class="product">Nike Sport Shoe</span>
-            </a>
-            <span class="price">$1234</span>
-          </li>
-          <li>
-            <a href="#">
-              <!--<img src="images/scarves.jpg" alt="">-->
-              <span class="product">Hermes Silk Scarves.</span>
-            </a>
-            <span class="price">$2312</span>
-          </li>
-          <li>
-            <a href="#">
-              <!--<img src="images/blueBag.jpg" alt="">-->
-              <span class="product">Succi Ladies Bag</span>
-            </a>
-            <span class="price">$1456</span>
-          </li>
-          <li>
-            <a href="#">
-              <!--<img src="images/bag.jpg" alt="">-->
-              <span class="product">Gucci Womens's Bags</span>
-            </a>
-            <span class="price">$2345</span>
-          <li>
-            <a href="#">
-              <!--<img src="images/addidas.jpg" alt="">-->
-              <span class="product">Addidas Running Shoe</span>
-            </a>
-            <span class="price">$2345</span>
-          </li>
-<li>
-    <a href="#">
-    <!--<img src="images/shirt.jpg" alt="">-->
-    <span class="product">Bilack Wear's Shirt</span>
-    </a>
-    <span class="price">$1245</span>
-    </li>
-    </ul>
+              <a href="#">
+                <!--<img src="images/jeans.jpg" alt="">-->
+                <span class="product">Kolkata</span>
+              </a>
+              <span class="price">100</span>
+            </li>
+            <li>
+              <a href="#">
+                <!--<img src="images/jeans.jpg" alt="">-->
+                <span class="product">Kolkata</span>
+              </a>
+              <span class="price">100</span>
+            </li>
+            <li>
+              <a href="#">
+                <!--<img src="images/jeans.jpg" alt="">-->
+                <span class="product">Kolkata</span>
+              </a>
+              <span class="price">100</span>
+            </li>
+            <li>
+              <a href="#">
+                <!--<img src="images/jeans.jpg" alt="">-->
+                <span class="product">Kolkata</span>
+              </a>
+              <span class="price">100</span>
+            </li>
+            <li>
+              <a href="#">
+                <!--<img src="images/jeans.jpg" alt="">-->
+                <span class="product">Kolkata</span>
+              </a>
+              <span class="price">100</span>
+            </li>
+          </ul>
     </div>
     </div>
     </div>
