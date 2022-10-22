@@ -39,7 +39,7 @@ class AuthComtroller extends Controller
         ];
 
         // return response($response, 200);
-        return $response;
+        return view('/dashboard/dashboard');
     }
 
     public function registerSubmit(request $request)
@@ -56,7 +56,7 @@ class AuthComtroller extends Controller
             'token' => $token,
         ];
         // return response($response, 200);
-        return redirect('/view');
+        return redirect('/login');
     }
     public function view()
     {
