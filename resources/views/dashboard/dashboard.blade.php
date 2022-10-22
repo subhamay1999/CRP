@@ -139,7 +139,6 @@
           <i class='bx bxs-cart-download cart four' ></i>
         </div>
       </div>
-
       <div class="sales-boxes">
         <div class="recent-sales box">
           <div class="title">Recent Sales</div>
