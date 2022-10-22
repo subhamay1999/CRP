@@ -39,7 +39,7 @@ class AuthComtroller extends Controller
         ];
 
         // return response($response, 200);
-        return view('/dashboard/dashboard');
+        return redirect('/user');
     }
 
     public function registerSubmit(request $request)

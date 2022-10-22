@@ -16,6 +16,17 @@ use App\Http\Controllers\AuthComtroller;
 Route::get('/', function () {
     return redirect('/login');
 });
+Route::group(['prefix'=>'user'], function(){
+    Route::get('/', function () {
+        return view('dashboard/dashboard');
+    });
+    Route::get('/booking', function () {
+        return view('booking/booking');
+    });
+    Route::get('/car', function () {
+        return view('car/car');
+    });
+});
 
 Route::get('/login',[AuthComtroller::class,'login'])->name('login');
 Route::get('/register',[AuthComtroller::class,'register'])->name('register');
