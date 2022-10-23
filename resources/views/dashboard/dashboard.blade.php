@@ -1,6 +1,6 @@
 @extends('container.container')
 @section('container')
-<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="{{ asset('css/dashboard.css')}}">
 <div class="home-content">
       <div class="overview-boxes">
         <div class="box">

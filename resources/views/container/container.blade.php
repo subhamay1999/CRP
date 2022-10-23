@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{ asset('css/container.css')}}">
 <div class="sidebar">
     <div class="logo-details">
-    <img src="assets/logo.jpg">
+    <img src="{{ asset('assets\logo.jpg')}}">
       <span class="logo_name">CRP</span>
     </div>
       <ul class="nav-links">
