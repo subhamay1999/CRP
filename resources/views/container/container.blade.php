@@ -54,8 +54,8 @@
   <section class="home-section">
     <nav>
       <div class="sidebar-button">
-      <i class="fas fa-home bx-menu sidebarBtn"></i>
-        <span class="dashboard">Dashboard</span>
+      <i class="fas fa-bars sidebarBtn"></i>
+        <!-- <span class="dashboard">Dashboard</span> -->
       </div>
       <div class="search-box">
         <input type="text" placeholder="Search...">
