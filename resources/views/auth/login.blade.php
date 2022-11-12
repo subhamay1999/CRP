@@ -26,11 +26,11 @@
                   class="form-control"
                   placeholder="example@user.com"
                   name="email"
-                  onchange="test()"
+                  value="{{old('email')}}"
                 />
                 <span
                   class="text-danger"
-                  ></span
+                  >@error('email'){{$message}}@enderror</span
                 >
               </div>
             </div>
@@ -40,22 +40,25 @@
                 <label for="password" hidden></label>
                 <input
                   type="password"
+                  id="password"
                   class="form-control"
                   placeholder="Password"
                   name="password"
                 />
                 <span
                   class="text-danger"
-                  ></span
+                  >@error('password'){{$message}}@enderror</span
                 >
               </div>
             </div>
             <div class="form-row mt-4 pt-3">
               <div class="btn-grp text-center">
                 <button
+                  type="submit"
                   class="btn btn-flat bg-primary mb-2"
+                  id="loginButton"
                 >
-                  <b> Login</b>
+                  <b>Login</b>
                 </button>
                 <a href="{{url('/register')}}"
                   class="createLink"
@@ -70,13 +73,6 @@
     </div>
   </div>
 </div>
-<script>
-  function test(){
-    $i=1
-    console.log($i)
-  }
-  // function test(){
-  //   alert("Hello");
-  // }
+<script >
   </script>
 @endsection

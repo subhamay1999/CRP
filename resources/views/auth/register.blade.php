@@ -26,8 +26,9 @@
                   class="form-control"
                   placeholder="Enter Full Name"
                   name="name"
+                  value="{{old('name')}}"
                 />
-                <span class="text-danger" ></span>
+                <span class="text-danger" >@error('name'){{$message}}@enderror</span>
               </div>
             </div>
             <!-- Email Id -->
@@ -39,11 +40,12 @@
                   class="form-control"
                   placeholder="Enter Email"
                   name="email"
+                  value="{{old('email')}}"
                 />
                 <span
                   class="text-danger"
 
-                  ></span
+                  >@error('email'){{$message}}@enderror</span
                 >
               </div>
             </div>
@@ -62,7 +64,7 @@
                 <span
                   class="text-danger"
 
-                  ></span
+                  >@error('password'){{$message}}@enderror</span
                 >
               </div>
             </div>
@@ -78,7 +80,7 @@
                   name="confirmPassword"
                 />
                 <span
-                  class="text-danger"></span>
+                  class="text-danger">@error('confirmPassword'){{$message}}@enderror</span>
               </div>
             </div>
             <div class="form-row mt-4 pt-3">

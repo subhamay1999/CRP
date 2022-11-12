@@ -44,7 +44,7 @@
           </a>
         </li>
         <li class="log_out">
-          <a href="#">
+          <a href="{{route('logout')}}">
           <i class="fas fa-sign-out-alt"></i>
             <span class="links_name">Log out</span>
           </a>

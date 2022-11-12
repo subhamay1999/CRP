@@ -6,24 +6,24 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 class AuthComtroller extends Controller
-{
-    public function login()
+{ 
+    public function login(request $request)
     {
         return view('auth/login');
     }
-
+    
     public function register()
     {
         return view('auth/register');
     }
-
+    
     public function loginSubmit(request $request)
     {
         $fields = $request->validate([
-
-            'email' => 'required|string',
+            'email' => 'required|email',
             'password' => 'required|string',
         ]);
+       
         //check email
         $user = User::where('email', $fields['email'])->first();
         //check password
@@ -44,6 +44,12 @@ class AuthComtroller extends Controller
 
     public function registerSubmit(request $request)
     {
+        $fields = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'password' => 'required|string',
+            'confirmPassword' => 'required|same:password',
+        ]);
         $fields = $request->only(['name', 'email', 'password']);
         $user = User::create([
             'name' => $fields['name'],
@@ -63,5 +69,10 @@ class AuthComtroller extends Controller
         $users=User::all();
         return view('view',['users'=>$users]);
     }
-   
+
+    public function logout()
+    {
+        auth()->user()->tokens()->delete();
+        return response(201);
+    }
 }

@@ -142,8 +142,18 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'name' => [
+            'required' => 'Name is required',
+        ],
+        'email' => [
+            'required' => 'Email is required',
+        ],
+        'password' => [
+            'required' => 'Password is required',
+        ],
+        'confirmPassword' => [
+            'required' => 'Confirm password is required',
+            'same' => 'Password and confirm password not match',
         ],
     ],
 
