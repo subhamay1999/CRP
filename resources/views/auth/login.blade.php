@@ -51,6 +51,7 @@
                 >
               </div>
             </div>
+            <span>{{$message}}</span>
             <div class="form-row mt-4 pt-3">
               <div class="btn-grp text-center">
                 <button
@@ -74,5 +75,23 @@
   </div>
 </div>
 <script >
+  $(document).ready(function() {
+  $('#loginButton').attr('disabled', true);
+  $('input').on('keyup', function() {
+  let empty;
+  let email=document.getElementById('email');
+  let password=document.getElementById('password');
+  if(email.value!='' && password.value!=''){
+    empty=false;
+  }
+  else{
+    empty=true;
+  }
+    if (empty)
+      $('#loginButton').attr('disabled', true);
+    else
+      $('#loginButton').attr('disabled', false);
+  });
+});
   </script>
 @endsection

@@ -5,33 +5,33 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+
 class AuthComtroller extends Controller
-{ 
+{
     public function login(request $request)
     {
-        return view('auth/login');
+        return view('auth/login')->with('message', '');
     }
-    
+
     public function register()
     {
         return view('auth/register');
     }
-    
+
     public function loginSubmit(request $request)
     {
         $fields = $request->validate([
             'email' => 'required|email',
             'password' => 'required|string',
         ]);
-       
+
         //check email
         $user = User::where('email', $fields['email'])->first();
         //check password
         if (!$user || !Hash::check($fields['password'], $user->password)) {
-            return response([
-                'masseage' => 'Email id or password is incorrect.',
-            ], 401);
+            return view('auth/login')->with('message', 'Email id or password is incorrect');
         }
+
         $token = $user->createToken('env.APP_NAME')->plainTextToken;
         $response = [
             'user' => $user,
@@ -66,8 +66,8 @@ class AuthComtroller extends Controller
     }
     public function view()
     {
-        $users=User::all();
-        return view('view',['users'=>$users]);
+        $users = User::all();
+        return view('view', ['users' => $users]);
     }
 
     public function logout()

@@ -37,6 +37,7 @@
                 <label for="email" hidden></label>
                 <input
                   type="text"
+                  id="email"
                   class="form-control"
                   placeholder="Enter Email"
                   name="email"
@@ -55,7 +56,7 @@
                 <label for="password" hidden></label>
                 <input
                   type="password"
-                  id="pw"
+                  id="password"
                   class="form-control"
                   placeholder="Enter Password"
                   aria-describedby="passwordHelp"
@@ -75,7 +76,7 @@
                 <input
                   type="password"
                   class="form-control"
-                  id="repw"
+                  id="confirmPassword"
                   placeholder="Re-Enter Password"
                   name="confirmPassword"
                 />
@@ -86,7 +87,9 @@
             <div class="form-row mt-4 pt-3">
               <div class="btn-grp text-center">
                 <button
+                  type="submit"
                   class="btn btn-flat bg-primary mb-2"
+                  id="registerButton"
                 >
                   <b> Register </b>
                 </button>
@@ -103,4 +106,26 @@
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function() {
+  $('#registerButton').attr('disabled', true);
+  $('input').on('keyup', function() {
+  let empty;
+  let name=document.getElementById('name');
+  let email=document.getElementById('email');
+  let password=document.getElementById('password');
+  let confirmPasword=document.getElementById('confirmPassword');
+  if(name.value!='' && email.value!='' && password.value!='' && confirmPasword.value!=''){
+    empty=false;
+  }
+  else{
+    empty=true;
+  }
+    if (empty)
+      $('#registerButton').attr('disabled', true);
+    else
+      $('#registerButton').attr('disabled', false);
+  });
+});
+</script>
 @endsection
